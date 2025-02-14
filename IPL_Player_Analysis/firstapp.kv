@@ -1,0 +1,738 @@
+<MenuScreen>:
+    BoxLayout:
+        orientation:'vertical'
+        spacing:"20dp"
+        padding:"20dp"
+        Widget:
+        MDRaisedButton:
+            pos_hint:{'center_x':0.5}
+            size_hint:0.8,None
+            font_size:20
+            text:"Most Runs"
+            on_press:
+                root.manager.transition.direction='left'
+                root.manager.current='runs'
+        MDRaisedButton:
+            pos_hint:{'center_x':0.5}
+            size_hint:0.8,None
+            font_size:20
+            text:"Most Sixes"
+            on_press:
+                root.manager.transition.direction='left'
+                root.manager.current='sixes'
+        MDRaisedButton:
+            pos_hint:{'center_x':0.5}
+            size_hint:0.8,None
+            font_size:20
+            text:"Most Fours"
+            on_press:
+                root.manager.transition.direction='left'
+                root.manager.current='fours'
+        MDRaisedButton:
+            pos_hint:{'center_x':0.5}
+            size_hint:0.8,None
+            font_size:20
+            text:"Highest Individual Score"
+            on_press:
+                root.manager.transition.direction='left'
+                root.manager.current='high score'
+        MDRaisedButton:
+            pos_hint:{'center_x':0.5}
+            size_hint:0.8,None
+            font_size:20
+            text:"Highest Batting Strike Rate"
+            on_press:
+                root.manager.transition.direction='left'
+                root.manager.current='strike rate'
+        MDRaisedButton:
+            pos_hint:{'center_x':0.5}
+            size_hint:0.8,None
+            font_size:20
+            text:"Most Wicket Taker"
+            on_press:
+                root.manager.transition.direction='left'
+                root.manager.current='wickets'
+        MDRaisedButton:
+            pos_hint:{'center_x':0.5}
+            size_hint:0.8,None
+            font_size:20
+            text:"Best Bowling Average"
+            on_press:
+                root.manager.transition.direction='left'
+                root.manager.current='average'
+        MDRaisedButton:
+            pos_hint:{'center_x':0.5}
+            size_hint:0.8,None
+            font_size:20
+            text:"Best Bowling Economy"
+            on_press:
+                root.manager.transition.direction='left'
+                root.manager.current='economy'
+        MDRaisedButton:
+            pos_hint:{'center_x':0.5}
+            size_hint:0.8,None
+            font_size:20
+            text:"Best Bowling Figure"
+            on_press:
+                root.manager.transition.direction='left'
+                root.manager.current='figure'
+        MDRaisedButton:
+            pos_hint:{'center_x':0.5}
+            size_hint:0.8,None
+            font_size:20
+            text:"Most Dot Balls"
+            on_press:
+                root.manager.transition.direction='left'
+                root.manager.current='dot balls'
+        Widget:
+
+<MostRuns>:
+    BoxLayout:
+        orientation:'vertical'
+        spacing:"20dp"
+        padding:"20dp"
+        ScrollView:
+            MDList:
+                pos_hint:{'center_x':0.5}
+                TwoLineAvatarIconListItem:
+                    text:"        Virat Kohli"
+                    secondary_text:"        5878 Runs"
+                    IconLeftWidget:
+                        icon:"MR1.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Suresh Raina"
+                    secondary_text:"        5368 Runs"
+                    IconLeftWidget:
+                        icon:"MR2.png"
+                TwoLineAvatarIconListItem:
+                    text:"        David Warner"
+                    secondary_text:"        5254 Runs"
+                    IconLeftWidget:
+                        icon:"MR3.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Rohit Sharma"
+                    secondary_text:"        5230 Runs"
+                    IconLeftWidget:
+                        icon:"MR4.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Shikhar Dhawan"
+                    secondary_text:"        5197 Runs"
+                    IconLeftWidget:
+                        icon:"MR5.png"
+                TwoLineAvatarIconListItem:
+                    text:"        AB de Villiers"
+                    secondary_text:"        4849 Runs"
+                    IconLeftWidget:
+                        icon:"MR6.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Chris Gayle"
+                    secondary_text:"        4772 Runs"
+                    IconLeftWidget:
+                        icon:"MR7.png"
+                TwoLineAvatarIconListItem:
+                    text:"        MS Dhoni"
+                    secondary_text:"        4632 Runs"
+                    IconLeftWidget:
+                        icon:"MR8.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Robin Uthappa"
+                    secondary_text:"        4607 Runs"
+                    IconLeftWidget:
+                        icon:"MR9.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Gautam Gambhir"
+                    secondary_text:"        4217 Runs"
+                    IconLeftWidget:
+                        icon:"MR10.png"
+        MDRaisedButton:
+            pos_hint:{'center_x':0.5}
+            size_hint:0.3,None
+            text:"Back"
+            on_press:
+                root.manager.transition.direction='right'
+                root.manager.current='menu'
+<MostSixes>:
+    BoxLayout:
+        orientation:'vertical'
+        spacing:"20dp"
+        padding:"20dp"
+        ScrollView:
+            MDList:
+                pos_hint:{'center_x':0.5}
+                TwoLineAvatarIconListItem:
+                    text:"        Chris Gayle"
+                    secondary_text:"        349 Sixes"
+                    IconLeftWidget:
+                        icon:"six1.png"
+                TwoLineAvatarIconListItem:
+                    text:"        AB de Villiers"
+                    secondary_text:"        235 Sixes"
+                    IconLeftWidget:
+                        icon:"six2.png"
+                TwoLineAvatarIconListItem:
+                    text:"        MS Dhoni"
+                    secondary_text:"        216 Sixes"
+                    IconLeftWidget:
+                        icon:"six3.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Rohit Sharma"
+                    secondary_text:"        213 Sixes"
+                    IconLeftWidget:
+                        icon:"six4.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Virat Kohli"
+                    secondary_text:"         201 Sixes"
+                    IconLeftWidget:
+                        icon:"six5.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Kieron Pollard"
+                    secondary_text:"        198 Sixes"
+                    IconLeftWidget:
+                        icon:"six6.png"
+                TwoLineAvatarIconListItem:
+                    text:"        David Warner"
+                    secondary_text:"        195 Sixes"
+                    IconLeftWidget:
+                        icon:"six7.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Suresh Raina"
+                    secondary_text:"        194 Sixes"
+                    IconLeftWidget:
+                        icon:"six8.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Shane Watson"
+                    secondary_text:"        190 Sixes"
+                    IconLeftWidget:
+                        icon:"six9.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Robin Uthappa"
+                    secondary_text:"        163 Sixes"
+                    IconLeftWidget:
+                        icon:"six10.png"
+        MDRaisedButton:
+            pos_hint:{'center_x':0.5}
+            size_hint:0.3,None
+            text:"Back"
+            on_press:
+                root.manager.transition.direction='right'
+                root.manager.current='menu'
+<MostFours>:
+    BoxLayout:
+        orientation:'vertical'
+        spacing:"20dp"
+        padding:"20dp"
+        ScrollView:
+            MDList:
+                pos_hint:{'center_x':0.5}
+                TwoLineAvatarIconListItem:
+                    text:"        Shikhar Dhawan"
+                    secondary_text:"        591 Fours"
+                    IconLeftWidget:
+                        icon:"mf1.png"
+                TwoLineAvatarIconListItem:
+                    text:"        David Warner"
+                    secondary_text:"        510 Fours"
+                    IconLeftWidget:
+                        icon:"mf2.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Virat Kohli"
+                    secondary_text:"        503 Fours"
+                    IconLeftWidget:
+                        icon:"mf3.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Suresh Raina"
+                    secondary_text:"        493 Fours"
+                    IconLeftWidget:
+                        icon:"mf4.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Gautam Gambhir"
+                    secondary_text:"        491 Fours"
+                    IconLeftWidget:
+                        icon:"mf5.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Rohit Sharma"
+                    secondary_text:"        458 Fours"
+                    IconLeftWidget:
+                        icon:"mf6.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Robin Uthappa"
+                    secondary_text:"        454 Fours"
+                    IconLeftWidget:
+                        icon:"mf7.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Ajinkya Rahane"
+                    secondary_text:"        416 Fours"
+                    IconLeftWidget:
+                        icon:"mf8.png"
+                TwoLineAvatarIconListItem:
+                    text:"        AB de villiers"
+                    secondary_text:"        390 Fours"
+                    IconLeftWidget:
+                        icon:"mf9.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Chris Gayle"
+                    secondary_text:"        384 Fours"
+                    IconLeftWidget:
+                        icon:"mf10.png"
+        MDRaisedButton:
+            pos_hint:{'center_x':0.5}
+            size_hint:0.3,None
+            text:"Back"
+            on_press:
+                root.manager.transition.direction='right'
+                root.manager.current='menu'
+<HighestIndividualScore>:
+    BoxLayout:
+        orientation:'vertical'
+        spacing:"20dp"
+        padding:"20dp"
+        ScrollView:
+            MDList:
+                pos_hint:{'center_x':0.5}
+                TwoLineAvatarIconListItem:
+                    text:"        Chris Gayle"
+                    secondary_text:"        175 Runs"
+                    IconLeftWidget:
+                        icon:"hs1.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Brendon mcCullum"
+                    secondary_text:"        158 Runs"
+                    IconLeftWidget:
+                        icon:"hs2.png"
+                TwoLineAvatarIconListItem:
+                    text:"        AB de Villiers"
+                    secondary_text:"        133 Runs"
+                    IconLeftWidget:
+                        icon:"hs3.png"
+                TwoLineAvatarIconListItem:
+                    text:"        KL Rahul"
+                    secondary_text:"        132 Runs"
+                    IconLeftWidget:
+                        icon:"hs4.png"
+                TwoLineAvatarIconListItem:
+                    text:"        AB de Villiers"
+                    secondary_text:"        129 Runs"
+                    IconLeftWidget:
+                        icon:"hs5.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Chris Gayle"
+                    secondary_text:"        128 Runs"
+                    IconLeftWidget:
+                        icon:"hs6.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Rishabh Pant"
+                    secondary_text:"        128 Runs"
+                    IconLeftWidget:
+                        icon:"hs7.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Murali Vijay"
+                    secondary_text:"        127 Runs"
+                    IconLeftWidget:
+                        icon:"hs8.png"
+                TwoLineAvatarIconListItem:
+                    text:"        David Warner"
+                    secondary_text:"        126 Runs"
+                    IconLeftWidget:
+                        icon:"hs9.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Virender Sehwag"
+                    secondary_text:"        122uns"
+                    IconLeftWidget:
+                        icon:"hs10.png"
+        MDRaisedButton:
+            pos_hint:{'center_x':0.5}
+            size_hint:0.3,None
+            text:"Back"
+            on_press:
+                root.manager.transition.direction='right'
+                root.manager.current='menu'
+<HighestBattingStrikeRate>:
+    BoxLayout:
+        orientation:'vertical'
+        spacing:"20dp"
+        padding:"20dp"
+        ScrollView:
+            MDList:
+                pos_hint:{'center_x':0.5}
+                TwoLineAvatarIconListItem:
+                    text:"        Andre Russell"
+                    secondary_text:"        182.33"
+                    IconLeftWidget:
+                        icon:"bsr1.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Nicholas Pooran"
+                    secondary_text:"        165.39"
+                    IconLeftWidget:
+                        icon:"bsr2.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Sunil Narine"
+                    secondary_text:"        164.27"
+                    IconLeftWidget:
+                        icon:"bsr3.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Hardik Pandya"
+                    secondary_text:"        159.26"
+                    IconLeftWidget:
+                        icon:"bsr4.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Moeen Ali"
+                    secondary_text:"        158.46"
+                    IconLeftWidget:
+                        icon:"bsr5.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Chris Morris"
+                    secondary_text:"        157.87"
+                    IconLeftWidget:
+                        icon:"bsr6.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Virender Sehwag"
+                    secondary_text:"        155.44"
+                    IconLeftWidget:
+                        icon:"bsr7.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Glenn Maxwell"
+                    secondary_text:"        154.67"
+                    IconLeftWidget:
+                        icon:"bsr8.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Rishabh Pant"
+                    secondary_text:"        151.97"
+                    IconLeftWidget:
+                        icon:"bsr9.png"
+                TwoLineAvatarIconListItem:
+                    text:"        AB de Villiers"
+                    secondary_text:"        151.91"
+                    IconLeftWidget:
+                        icon:"bsr10.png"
+        MDRaisedButton:
+            pos_hint:{'center_x':0.5}
+            size_hint:0.3,None
+            text:"Back"
+            on_press:
+                root.manager.transition.direction='right'
+                root.manager.current='menu'
+<MostWicketTaker>:
+    BoxLayout:
+        orientation:'vertical'
+        spacing:"20dp"
+        padding:"20dp"
+        ScrollView:
+            MDList:
+                pos_hint:{'center_x':0.5}
+                TwoLineAvatarIconListItem:
+                    text:"        Lasith Malinga"
+                    secondary_text:"        170 Wickets"
+                    IconLeftWidget:
+                        icon:"mw1.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Amit Mishra"
+                    secondary_text:"        160 Wickets"
+                    IconLeftWidget:
+                        icon:"mw2.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Piyush Chawla"
+                    secondary_text:"        156 Wickets"
+                    IconLeftWidget:
+                        icon:"mw3.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Dwayne Bravo"
+                    secondary_text:"        153 Wickets"
+                    IconLeftWidget:
+                        icon:"mw4.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Harbhajan Singh"
+                    secondary_text:"        150 Wickets"
+                    IconLeftWidget:
+                        icon:"mw5.png"
+                TwoLineAvatarIconListItem:
+                    text:"        R Ashwin"
+                    secondary_text:"        138 Wickets"
+                    IconLeftWidget:
+                        icon:"mw6.png"
+                TwoLineAvatarIconListItem:
+                    text:"        B Kumar"
+                    secondary_text:"        136 Wickets"
+                    IconLeftWidget:
+                        icon:"mw7.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Sunil Narine"
+                    secondary_text:"        127 Wickets"
+                    IconLeftWidget:
+                        icon:"mw8.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Y Chahal"
+                    secondary_text:"        121 Wickets"
+                    IconLeftWidget:
+                        icon:"mw9.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Umesh Yadav"
+                    secondary_text:"        119 Wickets"
+                    IconLeftWidget:
+                        icon:"mw10.png"
+        MDRaisedButton:
+            pos_hint:{'center_x':0.5}
+            size_hint:0.3,None
+            text:"Back"
+            on_press:
+                root.manager.transition.direction='right'
+                root.manager.current='menu'
+<BestBowlingAverage>:
+    BoxLayout:
+        orientation:'vertical'
+        spacing:"20dp"
+        padding:"20dp"
+        ScrollView:
+            MDList:
+                pos_hint:{'center_x':0.5}
+                TwoLineAvatarIconListItem:
+                    text:"        Kagiso Rabada"
+                    secondary_text:"        18.09"
+                    IconLeftWidget:
+                        icon:"bba1.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Doug Bollinger"
+                    secondary_text:"        18.72"
+                    IconLeftWidget:
+                        icon:"bba2.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Dimtri Mascarenhas"
+                    secondary_text:"        18.73"
+                    IconLeftWidget:
+                        icon:"bba3.png"
+                TwoLineAvatarIconListItem:
+                    text:"        MF Mahroof"
+                    secondary_text:"        19.25"
+                    IconLeftWidget:
+                        icon:"bba4.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Lasith Malinga"
+                    secondary_text:"        19.80"
+                    IconLeftWidget:
+                        icon:"bba5.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Mitchell Starc"
+                    secondary_text:"        19.80"
+                    IconLeftWidget:
+                        icon:"bba6.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Rashid Khan"
+                    secondary_text:"        20.49"
+                    IconLeftWidget:
+                        icon:"bba7.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Mitchell Marsh"
+                    secondary_text:"        21.00"
+                    IconLeftWidget:
+                        icon:"bba8.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Khaleel Ahmed"
+                    secondary_text:"        21.00"
+                    IconLeftWidget:
+                        icon:"bba9.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Imran Tahir"
+                    secondary_text:"        21.08"
+                    IconLeftWidget:
+                        icon:"bba10.png"
+        MDRaisedButton:
+            pos_hint:{'center_x':0.5}
+            size_hint:0.3,None
+            text:"Back"
+            on_press:
+                root.manager.transition.direction='right'
+                root.manager.current='menu'
+<BestBowlingEconomy>:
+    BoxLayout:
+        orientation:'vertical'
+        spacing:"20dp"
+        padding:"20dp"
+        ScrollView:
+            MDList:
+                pos_hint:{'center_x':0.5}
+                TwoLineAvatarIconListItem:
+                    text:"        Rashid Khan"
+                    secondary_text:"        6.24"
+                    IconLeftWidget:
+                        icon:"be1.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Anil Kumble"
+                    secondary_text:"        6.57"
+                    IconLeftWidget:
+                        icon:"be2.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Glenn Maxwell"
+                    secondary_text:"        6.61"
+                    IconLeftWidget:
+                        icon:"be3.png"
+                TwoLineAvatarIconListItem:
+                    text:"        M Muralidharan"
+                    secondary_text:"        6.67"
+                    IconLeftWidget:
+                        icon:"be4.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Roelof Merwe"
+                    secondary_text:"        6.74"
+                    IconLeftWidget:
+                        icon:"be5.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Sunil Narine"
+                    secondary_text:"        6.77"
+                    IconLeftWidget:
+                        icon:"be6.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Daniel Vittori"
+                    secondary_text:"        6.78"
+                    IconLeftWidget:
+                        icon:"be7.png"
+                TwoLineAvatarIconListItem:
+                    text:"        W Sundar"
+                    secondary_text:"        6.87"
+                    IconLeftWidget:
+                        icon:"be8.png"
+                TwoLineAvatarIconListItem:
+                    text:"        R Ashwin"
+                    secondary_text:"        6.877"
+                    IconLeftWidget:
+                        icon:"be9.png"
+                TwoLineAvatarIconListItem:
+                    text:"        dale Steyn"
+                    secondary_text:"        6.97"
+                    IconLeftWidget:
+                        icon:"be10.png"
+        MDRaisedButton:
+            pos_hint:{'center_x':0.5}
+            size_hint:0.3,None
+            text:"Back"
+            on_press:
+                root.manager.transition.direction='right'
+                root.manager.current='menu'
+<BestBowlingFigure>:
+    BoxLayout:
+        orientation:'vertical'
+        spacing:"20dp"
+        padding:"20dp"
+        ScrollView:
+            MDList:
+                pos_hint:{'center_x':0.5}
+                TwoLineAvatarIconListItem:
+                    text:"        Alzari Joseph"
+                    secondary_text:"        6/12"
+                    IconLeftWidget:
+                        icon:"bbf1.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Sohail Tanveer"
+                    secondary_text:"        6/14"
+                    IconLeftWidget:
+                        icon:"bbf2.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Adam Zampa"
+                    secondary_text:"        6/19"
+                    IconLeftWidget:
+                        icon:"bbf3.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Anil Kumble"
+                    secondary_text:"        5/5"
+                    IconLeftWidget:
+                        icon:"bbf4.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Ishant Sharma"
+                    secondary_text:"        5/12"
+                    IconLeftWidget:
+                        icon:"bbf5.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Lasith Malinga"
+                    secondary_text:"        5/13"
+                    IconLeftWidget:
+                        icon:"bbf6.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Ankit Rajpoot"
+                    secondary_text:"        5/14"
+                    IconLeftWidget:
+                        icon:"bbf7.png"
+                TwoLineAvatarIconListItem:
+                    text:"        James Faulkner"
+                    secondary_text:"        5/16"
+                    IconLeftWidget:
+                        icon:"bbf8.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Ravindra Jadeja"
+                    secondary_text:"        5/16"
+                    IconLeftWidget:
+                        icon:"bbf9.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Amit Mishra"
+                    secondary_text:"        5/17"
+                    IconLeftWidget:
+                        icon:"bbf10.png"
+        MDRaisedButton:
+            pos_hint:{'center_x':0.5}
+            size_hint:0.3,None
+            text:"Back"
+            on_press:
+                root.manager.transition.direction='right'
+                root.manager.current='menu'
+<MostDotBalls>:
+    BoxLayout:
+        orientation:'vertical'
+        spacing:"20dp"
+        padding:"20dp"
+        ScrollView:
+            MDList:
+                pos_hint:{'center_x':0.5}
+                TwoLineAvatarIconListItem:
+                    text:"        Harbhajan Singh"
+                    secondary_text:"        1249 Dot Balls"
+                    IconLeftWidget:
+                        icon:"md1.png"
+                TwoLineAvatarIconListItem:
+                    text:"        R Ashwin"
+                    secondary_text:"        1170 Dot Balls"
+                    IconLeftWidget:
+                        icon:"md2.png"
+                TwoLineAvatarIconListItem:
+                    text:"        B Kumar"
+                    secondary_text:"        1164 Dot Balls"
+                    IconLeftWidget:
+                        icon:"md3.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Lasith Malinga"
+                    secondary_text:"        1155 Dot Balls"
+                    IconLeftWidget:
+                        icon:"md4.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Piyush Chawla"
+                    secondary_text:"        1146 Dot Balls"
+                    IconLeftWidget:
+                        icon:"md5.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Amit Mishra"
+                    secondary_text:"        1129 Dot Balls"
+                    IconLeftWidget:
+                        icon:"md6.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Sunil Narine"
+                    secondary_text:"        1118 Dot Balls"
+                    IconLeftWidget:
+                        icon:"md7.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Praveen Kumar"
+                    secondary_text:"        1076 Dot Balls"
+                    IconLeftWidget:
+                        icon:"md8.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Dale Steyn"
+                    secondary_text:"        1022 Dot Balls"
+                    IconLeftWidget:
+                        icon:"md9.png"
+                TwoLineAvatarIconListItem:
+                    text:"        Umesh Yadav"
+                    secondary_text:"        962 Dot Balls"
+                    IconLeftWidget:
+                        icon:"md10.png"
+        MDRaisedButton:
+            pos_hint:{'center_x':0.5}
+            size_hint:0.3,None
+            text:"Back"
+            on_press:
+                root.manager.transition.direction='right'
+                root.manager.current='menu'
